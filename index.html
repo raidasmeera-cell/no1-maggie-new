@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b12">
+<title>NO1 MAGGIE | Esports Arena</title>
+<style>
+:root {
+  --bg: #080b12;
+  --panel: #111724;
+  --neon: #b7ff35;
+  --text: #f4f6fa;
+  --muted: #a0a9ba;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+  border-bottom: 1px solid #242b38;
+  background: #080b12;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.logo { font-size: 21px; font-weight: 900; letter-spacing: 1px; }
+.logo span { color: var(--neon); }
+nav a { color: var(--text); text-decoration: none; font-size: 13px; }
+.navlinks { display: flex; gap: 20px; align-items: center; }
+.hero {
+  min-height: 510px;
+  padding: 90px 7% 75px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(ellipse at 80% 40%, #304b1638, transparent 45%),
+    linear-gradient(135deg, #101827, #080b12 70%);
+  border-bottom: 1px solid #263044;
+}
+.hero-content { max-width: 750px; }
+.tag {
+  color: var(--neon);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+h1 {
+  font-size: clamp(43px, 9vw, 82px);
+  line-height: .98;
+  margin: 20px 0;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+h1 span { color: var(--neon); }
+p { color: var(--muted); line-height: 1.8; }
+.hero p { max-width: 520px; }
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  margin: 12px 8px 0 0;
+  background: var(--neon);
+  color: #10150a;
+  border: 1px solid var(--neon);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.btn.secondary { background: transparent; color: var(--text); border-color: #475164; }
+section { padding: 65px 7%; }
+.section-tag { color: var(--neon); font-size: 11px; letter-spacing: 3px; font-weight: bold; }
+h2 { font-size: clamp(27px, 5vw, 40px); margin: 12px 0; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid #283246;
+  padding: 25px;
+  border-radius: 8px;
+}
+.card .symbol { font-size: 30px; }
+.card h3 { margin-bottom: 8px; }
+.pill {
+  display: inline-block;
+  color: var(--neon);
+  border: 1px solid #42582b;
+  padding: 6px 9px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.prize { font-size: 27px; font-weight: 900; color: var(--neon); margin: 15px 0; }
+.steps { color: var(--muted); line-height: 2; padding-left: 20px; }
+.callout {
+  text-align: center;
+  padding: 45px 20px;
+  border: 1px solid #334326;
+  background: radial-gradient(ellipse, #25351c, #111724 70%);
+  border-radius: 10px;
+}
+form { display: grid; gap: 14px; margin-top: 20px; }
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #303b4f;
+  border-radius: 5px;
+  background: #080d16;
+  color: white;
+  font: inherit;
+}
+small { color: var(--muted); line-height: 1.7; }
+footer {
+  padding: 28px 7%;
+  border-top: 1px solid #283246;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+@media(max-width:500px) {
+  nav { padding: 17px 5%; }
+  .logo { font-size: 17px; }
+  .navlinks { gap: 12px; }
+  .navlinks a { font-size: 11px; }
+  .hero { padding: 75px 6%; min-height: 440px; }
+  h1 { letter-spacing: -2px; }
+  section { padding: 50px 6%; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">NO1 <span>MAGGIE</span></div>
+  <div class="navlinks">
+    <a href="#events">EVENTS</a>
+    <a href="#about">ABOUT</a>
+    <a href="#register">JOIN US</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="tag">YOUR GAME. YOUR LEGACY.</div>
+    <h1>ENTER THE<br><span>ARENA.</span></h1>
+    <p>Welcome to NO1 MAGGIE — a home for competitive gamers, tournament battles and the next generation of esports talent.</p>
+    <a class="btn" href="#events">EXPLORE EVENTS ↘</a>
+    <a class="btn secondary" href="#register">JOIN THE COMMUNITY</a>
+  </div>
+</header>
+
+<section id="events">
+  <div class="section-tag">COMPETE • IMPROVE • WIN</div>
+  <h2>THE ARENA</h2>
+  <p>Find your next challenge. More tournament announcements coming soon.</p>
+  <div class="cards">
+    <article class="card">
+      <div class="symbol">🎯</div>
+      <span class="pill">COMING SOON</span>
+      <h3>BGMI SHOWDOWN</h3>
+      <p>Squad up, sharpen your strategy and prepare for the battleground.</p>
+    </article>
+    <article class="card">
+      <div class="symbol">⚡</div>
+      <span class="pill">COMING SOON</span>
+      <h3>FREE FIRE CLASH</h3>
+      <p>Fast fights, smart plays and intense competitive action.</p>
+    </article>
+    <article class="card">
+      <div class="symbol">🏆</div>
+      <span class="pill">COMMUNITY</span>
+      <h3>PLAYER HUB</h3>
+      <p>Meet other players and stay ready for future events.</p>
+    </article>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-tag">OUR MISSION</div>
+  <h2>BUILT FOR THE GRIND.</h2>
+  <p>NO1 MAGGIE is an esports community concept built around skill, teamwork and fair competition. Our goal is to create a space where players can connect and prepare for future tournaments.</p>
+  <div class="cards">
+    <article class="card">
+      <h3>01 / SKILL</h3>
+      <p>Improve through practice and smart decisions.</p>
+    </article>
+    <article class="card">
+      <h3>02 / TEAMWORK</h3>
+      <p>Communicate, coordinate and play together.</p>
+    </article>
+    <article class="card">
+      <h3>03 / FAIR PLAY</h3>
+      <p>Respect your opponents and compete honestly.</p>
+    </article>
+  </div>
+</section>
+
+<section id="register">
+  <div class="callout">
+    <div class="section-tag">READY TO LEVEL UP?</div>
+    <h2>JOIN THE COMMUNITY.</h2>
+    <p>Interested in participating? Send your details to register your interest.</p>
+    <form id="joinForm">
+      <input id="playerName" type="text" placeholder="Your player name" required>
+      <select id="game" required>
+        <option value="">Select your game</option>
+        <option>BGMI</option>
+        <option>Free Fire</option>
+        <option>Other</option>
+      </select>
+      <input id="contact" type="text" placeholder="Contact detail (optional)">
+      <button class="btn" type="submit">PREPARE REGISTRATION</button>
+    </form>
+    <p id="message" role="status"></p>
+    <small>This demo form does not send or store your information. Registration is not confirmed. Do not enter passwords or sensitive personal details.</small>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">NO1 <span>MAGGIE</span></div>
+  <p>PLAY WITH PURPOSE. COMPETE WITH RESPECT.</p>
+  <small>Independent esports community concept. Not affiliated with BGMI or Free Fire.</small>
+  <p>© 2026 NO1 MAGGIE</p>
+</footer>
+
+<script>
+document.getElementById("joinForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  const name = document.getElementById("playerName").value.trim();
+  const game = document.getElementById("game").value;
+  if (!name || !game) return;
+  document.getElementById("message").textContent =
+    "Thanks, " + name + "! Your demo form works, but your details have not been sent or saved. Contact the website owner to register.";
+});
+</script>
+
+</body>
+</html>
